@@ -1,7 +1,7 @@
 require_relative"../lib/display_board.rb"
 
 describe "#display_board in 'lib/display_board.rb" do
-     context 'various game situations' 
+     context 'various game situations'
     it 'prints a blank board when the board array is empty' do
       board = [" "," "," "," "," "," "," "," "," "]
 
@@ -26,7 +26,7 @@ describe "#display_board in 'lib/display_board.rb" do
       expect(rows[2]).to eq("   | X |   ")
       expect(rows[3]).to eq("-----------")
       expect(rows[4]).to eq("   |   |   ")
-      
+
 
     end
 
