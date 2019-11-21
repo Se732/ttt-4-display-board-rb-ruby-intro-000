@@ -1,7 +1,7 @@
 require_relative"../lib/display_board.rb"
 
 describe "#display_board in 'lib/display_board.rb" do
-  it context 'various game situations' do
+     context 'various game situations' 
     it 'prints a blank board when the board array is empty' do
       board = [" "," "," "," "," "," "," "," "," "]
 
@@ -26,6 +26,7 @@ describe "#display_board in 'lib/display_board.rb" do
       expect(rows[2]).to eq("   | X |   ")
       expect(rows[3]).to eq("-----------")
       expect(rows[4]).to eq("   |   |   ")
+      
 
     end
 
@@ -165,26 +166,31 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # *** Edit the lines below ***
       # *** Uncomment the lines below ***
-      # expect(rows[0]).to eq("   |   |   ")
-      # expect(rows[1]).to eq("-----------")
-      # expect(rows[2]).to eq("   |   |   ")
-      # expect(rows[3]).to eq("-----------")
-      # expect(rows[4]).to eq("   |   |   ")
+       expect(rows[0]).to eq("   |   |   ")
+       expect(rows[1]).to eq("-----------")
+       expect(rows[2]).to eq("   |   |   ")
+       expect(rows[3]).to eq("-----------")
+       expect(rows[4]).to eq("   |   |   ")
 
       # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+      #expect(true).to be(true)
     end
 
     it 'prints an entire board full of Os' do
       # Can you copy the syntax of the tests above to write a test for a board
       # entirely filled with Os?
+      expect(rows[0]).to eq(" o | o | o ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq(" o | o | o ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq(" o | o | o ")
 
       # Hint: You should be able to copy the code in the previous it example
       # and make a few simple edits to convert the previous example to this
       # example's situation.
 
       # *** Comment the line below by adding a # at the line start ***
-      expect(true).to be(true)
+      #expect(true).to be(true)
     end
   end
 end
